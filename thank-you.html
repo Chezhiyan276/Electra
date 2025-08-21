@@ -1,0 +1,137 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You - Electra</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+	<link rel="icon" href="img/logo.png" type="image/x-icon">
+    
+    <!-- Icon Font Stylesheet -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+    
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+	<script src="https://assets.adobedtm.com/de3a66fdc88b/4c547de1599d/launch-d3f3eba9d815-development.min.js" async></script>
+	
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background: url('img/banner-img.jpg') center center no-repeat;
+            background-size: cover;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        .thank-you-container {
+            background: rgba(255, 255, 255, 0.9);
+            text-align: center;
+            padding: 60px 20px;
+            max-width: 600px;
+            margin: 100px auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .thank-you-container h1 {
+            font-size: 3rem;
+            color: var(--bs-primary);
+            margin-bottom: 20px;
+        }
+        .thank-you-container p {
+            font-size: 1.2rem;
+            color: #555;
+            margin-bottom: 30px;
+        }
+        .thank-you-container a {
+            display: inline-block;
+            background-color: var(--bs-primary);
+            color: #fff;
+            padding: 10px 25px;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+        .thank-you-container a:hover {
+            background-color: var(--bs-dark);
+        }
+    </style>
+	
+</head>
+<body>
+    <!-- Header -->
+    <div class="container d-flex align-items-center">
+        <div class="d-flex align-items-center h-100">
+            <a href="index.html" class="navbar-brand" style="height: 125px;">
+                <h1 class="text-primary mb-0"><i class="fas fa-bolt"></i> Electra</h1>
+            </a>
+        </div>
+        <div class="w-100 h-100">
+            <div class="topbar px-0 py-2 d-none d-lg-block" style="height: 45px;">
+                <div class="row gx-0 align-items-center">
+                    <div class="col-lg-8 text-center text-lg-center">
+                        <div class="d-flex flex-wrap">
+                            <div class="border-end border-primary pe-3">
+                                <a href="#" class="text-muted small"><i class="fas fa-map-marker-alt text-primary me-2"></i>Find A Location</a>
+                            </div>
+                            <div class="ps-3">
+                                <a href="mailto:example@gmail.com" class="text-muted small"><i class="fas fa-envelope text-primary me-2"></i>example@gmail.com</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 text-center text-lg-end">
+                        <div class="d-flex justify-content-end">
+                            <a class="btn p-0 text-primary me-3" href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn p-0 text-primary me-3" href="#"><i class="fab fa-twitter"></i></a>
+                            <a class="btn p-0 text-primary me-3" href="#"><i class="fab fa-instagram"></i></a>
+                            <a class="btn p-0 text-primary" href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="nav-bar px-0 py-lg-0">
+                <nav class="navbar navbar-expand-lg navbar-light d-flex justify-content-lg-end">
+                    <a href="index.html" class="navbar-brand-2">
+                        <h1 class="text-primary mb-0"><i class="fas fa-bolt"></i> Electra</h1>
+                    </a>  
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <!-- Thank You Section -->
+    <div class="thank-you-container">
+        <h1>Thank You!</h1>
+        <p>Your submission was successful. We'll get back to you as soon as possible.</p>
+        <a href="index.html">Return to Home</a>
+    </div>
+
+    <!-- Footer -->
+    <div class="container-fluid footer bg-dark py-5">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-7">
+                    <div class="position-relative mx-auto">
+                        <input class="form-control w-100 py-3 ps-4 pe-5" type="text" placeholder="Email address to Subscribe">
+                        <button type="button" class="btn btn-primary position-absolute top-0 end-0 py-2 px-4 mt-2 me-2">Subscribe</button>
+                    </div>
+                </div>
+                <div class="col-lg-5 d-flex align-items-center justify-content-end">
+                    <a class="btn btn-light btn-md-square me-3" href=""><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-light btn-md-square me-3" href=""><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-light btn-md-square me-3" href=""><i class="fab fa-instagram"></i></a>
+                    <a class="btn btn-light btn-md-square me-0" href=""><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
