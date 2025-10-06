@@ -393,6 +393,28 @@ Designed By <a class="border-bottom text-white" href="https://htmlcodex.com">HTM
 
 <!-- Template Javascript -->
 <script src="js/main.js"></script>
+<script>
+	document.addEventListener('DOMContentLoaded',function(){
+document.querySelector('input[type="email"]').addEventListener('focusout',function(){
+    if(document.querySelector('input[type="email"]').value && document.querySelector('input[type="email"]').value.includes('@') && document.querySelector('input[type="email"]').value.includes('.com')){
+		const  email_id = document.querySelector('input[type="email"]').value;
+      const response = await fetch("/api/login", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ email_id })
+  });
+
+  const result = await response.json();
+
+  if (result.success) {
+    alert("Welcome! Your CRM ID is: " + result.Electra_DB.crmID);
+  } else {
+    alert("User not found");
+  }
+    }
+})
+});
+</script>
 
 </body>
 
