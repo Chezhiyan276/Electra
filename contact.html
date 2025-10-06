@@ -395,7 +395,7 @@ Designed By <a class="border-bottom text-white" href="https://htmlcodex.com">HTM
 <script src="js/main.js"></script>
 <script>
 	document.addEventListener('DOMContentLoaded',function(){
-document.querySelector('input[type="email"]').addEventListener('focusout',function(){
+document.querySelector('input[type="email"]').addEventListener('focusout',async (e) => {
     if(document.querySelector('input[type="email"]').value && document.querySelector('input[type="email"]').value.includes('@') && document.querySelector('input[type="email"]').value.includes('.com')){
 		const  email_id = document.querySelector('input[type="email"]').value;
       const response = await fetch("/api/login", {
