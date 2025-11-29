@@ -39,11 +39,16 @@ function pushProductUniversal(input) {
     }
   });
 }
+pushProductUniversal([
+  { name: "ABC123", id: "123344", quantity: 2, price: 100.5 },
+  { name: "DEF456", id: "9876545", quantity: 3, price: 200.5 }
+]);
 
 
 window.adobeDataLayer = window.adobeDataLayer || [];
 window.adobeDataLayer.push({
     event: "pageView",
     page: { name: "Home Page", url: location.href }
+    
 });
 
