@@ -52,3 +52,14 @@ window.adobeDataLayer.push({
     
 });
 
+
+window.adobeDataLayer.push({
+    user: {
+      userdetails: {
+        Apparel: [
+          { SKU: "AEE245123", product: "Shirt", quantity: 2, priceTotal: 100.5 },
+          { SKU: "AEE6554456", product: "Shoes", quantity: 3, priceTotal: 200.5 }
+        ]
+      }
+    }
+  });
