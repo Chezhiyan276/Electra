@@ -40,8 +40,8 @@ function pushProductUniversal(input) {
   });
 }
 pushProductUniversal([
-  { name: "ABC123", id: "123344", quantity: 2, price: 100.5 },
-  { name: "DEF456", id: "9876545", quantity: 3, price: 200.5 }
+  { SKU: "ABC123", product: "Watches", quantity: 2, priceTotal: 100.5 },
+  { SKU: "DEF456", product: "Apparel", quantity: 3, priceTotal: 200.5 }
 ]);
 
 
